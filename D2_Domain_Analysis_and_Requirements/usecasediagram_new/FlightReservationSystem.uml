@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aWFOsMxGEeWcEI-aEBtBjg" name="model">
-  <packagedElement xmi:type="uml:Package" xmi:id="_pCwegMxGEeWcEI-aEBtBjg" name="Flight Reservation System">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_73ZCMMxGEeWcEI-aEBtBjg" name="Update Flight DB"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pCwegMxGEeWcEI-aEBtBjg" name="FlyinTravel">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_73ZCMMxGEeWcEI-aEBtBjg" name="Update Flight DB">
+      <include xmi:type="uml:Include" xmi:id="_nrkSEM4HEeWQVZ2T69c1Qg" addition="_N3yFgMxHEeWcEI-aEBtBjg"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_BNPFgMxHEeWcEI-aEBtBjg" name="Create Account"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_N3yFgMxHEeWcEI-aEBtBjg" name="Login"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Ron54MxHEeWcEI-aEBtBjg" name="Search Flights"/>
@@ -18,15 +20,18 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_nWsd8MxJEeWcEI-aEBtBjg" general="_nzeygMxHEeWcEI-aEBtBjg"/>
       <include xmi:type="uml:Include" xmi:id="_KQnfoMxJEeWcEI-aEBtBjg" addition="_u9MAIMxHEeWcEI-aEBtBjg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_6t7qUMxHEeWcEI-aEBtBjg" name="Payment via Credit/Debit card">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6t7qUMxHEeWcEI-aEBtBjg" name="Payment via Credit/Debit card / Interac">
       <generalization xmi:type="uml:Generalization" xmi:id="_hiH3QMxJEeWcEI-aEBtBjg" general="_nzeygMxHEeWcEI-aEBtBjg"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iyH74s3QEeWxK-Xclv8ofg" name="ExtensionPoint1"/>
       <include xmi:type="uml:Include" xmi:id="_AquG8MxKEeWcEI-aEBtBjg" addition="_1KwDsMxJEeWcEI-aEBtBjg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_OR3kAMxIEeWcEI-aEBtBjg" name="Cancel Booking"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_U5oiMMxIEeWcEI-aEBtBjg" name="Modify Booking"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_U5oiMMxIEeWcEI-aEBtBjg" name="Modify Booking">
+      <extend xmi:type="uml:Extend" xmi:id="_iwouIM3QEeWxK-Xclv8ofg" extendedCase="_6t7qUMxHEeWcEI-aEBtBjg" extensionLocation="_iyH74s3QEeWxK-Xclv8ofg"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_1KwDsMxJEeWcEI-aEBtBjg" name="Validate Payment"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_smdOwMxGEeWcEI-aEBtBjg" name="Agent"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_smdOwMxGEeWcEI-aEBtBjg" name="Administrator"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_ul-PcMxGEeWcEI-aEBtBjg" name="Traveller"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_cx8iQMxIEeWcEI-aEBtBjg" name="A_traveller_login" memberEnd="_cx8iQcxIEeWcEI-aEBtBjg _cx8iRMxIEeWcEI-aEBtBjg">
     <ownedEnd xmi:type="uml:Property" xmi:id="_cx8iQcxIEeWcEI-aEBtBjg" name="traveller" type="_ul-PcMxGEeWcEI-aEBtBjg" association="_cx8iQMxIEeWcEI-aEBtBjg">
@@ -119,24 +124,14 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9pa5JsxJEeWcEI-aEBtBjg" value="1"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_FXVAAMxKEeWcEI-aEBtBjg" name="A_agent_cancel booking" memberEnd="_FXVAAcxKEeWcEI-aEBtBjg _FXVABMxKEeWcEI-aEBtBjg">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_FXVAAcxKEeWcEI-aEBtBjg" name="agent" type="_smdOwMxGEeWcEI-aEBtBjg" association="_FXVAAMxKEeWcEI-aEBtBjg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FXVAAsxKEeWcEI-aEBtBjg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FXVAA8xKEeWcEI-aEBtBjg" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_V-Z3UM4IEeWQVZ2T69c1Qg" name="A_administrator_login" memberEnd="_V-Z3Uc4IEeWQVZ2T69c1Qg _V-Z3VM4IEeWQVZ2T69c1Qg">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_V-Z3Uc4IEeWQVZ2T69c1Qg" name="administrator" type="_smdOwMxGEeWcEI-aEBtBjg" association="_V-Z3UM4IEeWQVZ2T69c1Qg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-Z3Us4IEeWQVZ2T69c1Qg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-Z3U84IEeWQVZ2T69c1Qg" value="1"/>
     </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_FXVABMxKEeWcEI-aEBtBjg" name="cancel booking" type="_OR3kAMxIEeWcEI-aEBtBjg" association="_FXVAAMxKEeWcEI-aEBtBjg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FXVABcxKEeWcEI-aEBtBjg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FXVABsxKEeWcEI-aEBtBjg" value="1"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_O1Es0MxKEeWcEI-aEBtBjg" name="A_agent_modify booking" memberEnd="_O1Es0cxKEeWcEI-aEBtBjg _O1Es1MxKEeWcEI-aEBtBjg">
-    <ownedEnd xmi:type="uml:Property" xmi:id="_O1Es0cxKEeWcEI-aEBtBjg" name="agent" type="_smdOwMxGEeWcEI-aEBtBjg" association="_O1Es0MxKEeWcEI-aEBtBjg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1Es0sxKEeWcEI-aEBtBjg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O1Es08xKEeWcEI-aEBtBjg" value="1"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_O1Es1MxKEeWcEI-aEBtBjg" name="modify booking" type="_U5oiMMxIEeWcEI-aEBtBjg" association="_O1Es0MxKEeWcEI-aEBtBjg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1Es1cxKEeWcEI-aEBtBjg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O1Es1sxKEeWcEI-aEBtBjg" value="1"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_V-Z3VM4IEeWQVZ2T69c1Qg" name="login" type="_N3yFgMxHEeWcEI-aEBtBjg" association="_V-Z3UM4IEeWQVZ2T69c1Qg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-Z3Vc4IEeWQVZ2T69c1Qg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-Z3Vs4IEeWQVZ2T69c1Qg" value="1"/>
     </ownedEnd>
   </packagedElement>
 </uml:Model>
