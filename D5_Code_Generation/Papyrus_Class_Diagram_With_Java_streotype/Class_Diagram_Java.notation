@@ -392,7 +392,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXyCJO40EeW5DuVWeU9ZEA"/>
       </children>
       <element xmi:type="uml:Class" href="Class_Diagram_Java.uml#_fXpfMO40EeW5DuVWeU9ZEA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXyCKO40EeW5DuVWeU9ZEA" x="1168" y="574" width="244"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXyCKO40EeW5DuVWeU9ZEA" x="1168" y="574" width="300"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_fXzQOe40EeW5DuVWeU9ZEA" type="2008">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HVRj8O43EeW5DuVWeU9ZEA" source="Stereotype_Annotation">
@@ -568,6 +568,17 @@
           <element xmi:type="uml:Property" href="Class_Diagram_Java.uml#_TcnT0PmpEeWXrtjlOeRGKg"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_TcxE0fmpEeWXrtjlOeRGKg"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_DfeOEP1AEeWVZMhpwAJTpg" type="3012">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TcYWsP1AEeWVZMhpwAJTpg" source="Stereotype_Annotation">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcYWsf1AEeWVZMhpwAJTpg" key="StereotypeWithQualifiedNameList" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcYWsv1AEeWVZMhpwAJTpg" key="StereotypeList" value="java::JavaProperty"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcYWs_1AEeWVZMhpwAJTpg" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcYWtP1AEeWVZMhpwAJTpg" key="PropStereoDisplay" value=""/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcYWtf1AEeWVZMhpwAJTpg" key="StereotypePropertyLocation" value="Compartment"/>
+          </eAnnotations>
+          <element xmi:type="uml:Property" href="Class_Diagram_Java.uml#_DfUdEP1AEeWVZMhpwAJTpg"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_DfeOEf1AEeWVZMhpwAJTpg"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_fX0eaO40EeW5DuVWeU9ZEA"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_fX0eae40EeW5DuVWeU9ZEA"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_fX0eau40EeW5DuVWeU9ZEA"/>
@@ -584,17 +595,6 @@
           </eAnnotations>
           <element xmi:type="uml:Operation" href="Class_Diagram_Java.uml#_fXd5Fu40EeW5DuVWeU9ZEA"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_fX0ebu40EeW5DuVWeU9ZEA"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_fX0eb-40EeW5DuVWeU9ZEA" type="3013">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I4NoQO41EeW5DuVWeU9ZEA" source="Stereotype_Annotation">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I4NoQe41EeW5DuVWeU9ZEA" key="StereotypeWithQualifiedNameList" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I4NoQu41EeW5DuVWeU9ZEA" key="StereotypeList" value="java::JavaMethod"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I4NoQ-41EeW5DuVWeU9ZEA" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I4NoRO41EeW5DuVWeU9ZEA" key="PropStereoDisplay" value=""/>
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I4NoRe41EeW5DuVWeU9ZEA" key="StereotypePropertyLocation" value="Compartment"/>
-          </eAnnotations>
-          <element xmi:type="uml:Operation" href="Class_Diagram_Java.uml#_fXd5F-40EeW5DuVWeU9ZEA"/>
-          <layoutConstraint xmi:type="notation:Location" xmi:id="_fX0ecO40EeW5DuVWeU9ZEA"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_fX0ece40EeW5DuVWeU9ZEA" type="3013">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KJlJgO41EeW5DuVWeU9ZEA" source="Stereotype_Annotation">
@@ -1097,7 +1097,7 @@
       <element xmi:type="uml:Association" href="Class_Diagram_Java.uml#_fXd5IO40EeW5DuVWeU9ZEA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fXu-zu40EeW5DuVWeU9ZEA" points="[-6, -4, 0, 84]$[-3, -76, 3, 12]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fXu-z-40EeW5DuVWeU9ZEA" id="(0.47540983606557374,0.03389830508474576)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fXu-0O40EeW5DuVWeU9ZEA" id="(0.42201834862385323,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fXu-0O40EeW5DuVWeU9ZEA" id="(0.5506072874493927,0.9646464646464646)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_fXvl8O40EeW5DuVWeU9ZEA" type="4001" source="_fX2TgO40EeW5DuVWeU9ZEA" target="_fX0egO40EeW5DuVWeU9ZEA">
       <children xmi:type="notation:DecorationNode" xmi:id="_fXvl8e40EeW5DuVWeU9ZEA" type="6001">
@@ -1204,7 +1204,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_fX1Fgu40EeW5DuVWeU9ZEA"/>
       <element xmi:type="uml:Generalization" href="Class_Diagram_Java.uml#_fXd5Pe40EeW5DuVWeU9ZEA"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fX1Fg-40EeW5DuVWeU9ZEA" points="[-12, 2, 74, 0]$[-80, 1, 6, -1]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fX1FhO40EeW5DuVWeU9ZEA" id="(0.0045871559633027525,0.43956043956043955)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fX1FhO40EeW5DuVWeU9ZEA" id="(0.004048582995951417,0.4494949494949495)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fX1Fhe40EeW5DuVWeU9ZEA" id="(1.0,0.3433734939759036)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_fX1sk-40EeW5DuVWeU9ZEA" type="4016" source="_fXzQMO40EeW5DuVWeU9ZEA" target="_fXz3QO40EeW5DuVWeU9ZEA">

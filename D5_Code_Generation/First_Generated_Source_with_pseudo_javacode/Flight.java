@@ -1,6 +1,7 @@
 
 
 import java.util.List;
+import java.util.Date;
 
 public class Flight {
 
@@ -23,7 +24,7 @@ public class Flight {
 	/**
 	 * 
 	 */
-	private int Date;
+	private Date Date;
 	/**
 	 * 
 	 */
@@ -87,13 +88,13 @@ public class Flight {
 	/**
 	 * Getter of Date
 	 */
-	public int getDate() {
+	public Date getDate() {
 	 	 return Date; 
 	}
 	/**
 	 * Setter of Date
 	 */
-	public void setDate(int Date) { 
+	public void setDate(Date Date) { 
 		 this.Date = Date; 
 	}
 	/**

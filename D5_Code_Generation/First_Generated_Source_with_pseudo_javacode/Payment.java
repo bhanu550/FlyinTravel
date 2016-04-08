@@ -9,6 +9,10 @@ public class Payment {
 	/**
 	 * 
 	 */
+	private String Modeofpayment;
+	/**
+	 * 
+	 */	
 	private Integer Amount;
 	/**
 	 * 
@@ -39,6 +43,18 @@ public class Payment {
 		 this.Amount = Amount; 
 	}
 	/**
+	 * Getter of PaymentID
+	 */
+	public String getModeofpayment() {
+	 	 return Modeofpayment; 
+	}
+	/**
+	 * Setter of PaymentID
+	 */
+	public void setModeofpayment(String Modeofpayment) { 
+		 this.Modeofpayment = Modeofpayment; 
+	}	
+	/**
 	 * Getter of traveller
 	 */
 	public Traveler getTraveller() {
@@ -53,14 +69,9 @@ public class Payment {
 	/**
 	 * 
 	 */
-	public void MakePayment() { 
+	public Integer MakePayment() { 
 		// TODO Auto-generated method
-	 }
-	/**
-	 * 
-	 */
-	public void ModeofPayment() { 
-		// TODO Auto-generated method
+		return 0;
 	 }
 	/**
 	 * 

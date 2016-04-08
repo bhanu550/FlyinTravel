@@ -24,8 +24,14 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_TcnT0PmpEeWXrtjlOeRGKg" name="traveller" visibility="private" type="_fXoRF-40EeW5DuVWeU9ZEA"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXd5Fu40EeW5DuVWeU9ZEA" name="MakePayment"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXd5F-40EeW5DuVWeU9ZEA" name="ModeofPayment"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DfUdEP1AEeWVZMhpwAJTpg" name="Modeofpayment" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXd5Fu40EeW5DuVWeU9ZEA" name="MakePayment">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nry2UP1AEeWVZMhpwAJTpg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_fXd5GO40EeW5DuVWeU9ZEA" name="ViewPayment"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fXd5Ge40EeW5DuVWeU9ZEA" name="R4---->has" memberEnd="_fXd5Gu40EeW5DuVWeU9ZEA _fXd5He40EeW5DuVWeU9ZEA">
@@ -224,7 +230,11 @@ post:: self.member->excludes(m)</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jx00EPmqEeWXrtjlOeRGKg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jx00EfmqEeWXrtjlOeRGKg" value="*"/>
       </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXpfMu40EeW5DuVWeU9ZEA" name="ValidateTransaction"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_fXpfMu40EeW5DuVWeU9ZEA" name="ValidateTransaction">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tiQ6cP1AEeWVZMhpwAJTpg" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_fXqGQO40EeW5DuVWeU9ZEA" name="R2---->Makes" memberEnd="_fXqGQe40EeW5DuVWeU9ZEA _fXqGRO40EeW5DuVWeU9ZEA">
       <ownedEnd xmi:type="uml:Property" xmi:id="_fXqGQe40EeW5DuVWeU9ZEA" name="traveller" type="_fXoRF-40EeW5DuVWeU9ZEA" association="_fXqGQO40EeW5DuVWeU9ZEA">
@@ -335,7 +345,6 @@ post:: self.member->excludes(m)</body>
   <java:JavaProperty xmi:id="_E5HVcO41EeW5DuVWeU9ZEA" base_Property="_fXd5FO40EeW5DuVWeU9ZEA"/>
   <java:JavaProperty xmi:id="_GiAl4O41EeW5DuVWeU9ZEA" base_Property="_fXd5Fe40EeW5DuVWeU9ZEA"/>
   <java:JavaMethod xmi:id="_Hu5PwO41EeW5DuVWeU9ZEA" base_Operation="_fXd5Fu40EeW5DuVWeU9ZEA"/>
-  <java:JavaMethod xmi:id="_I4D3QO41EeW5DuVWeU9ZEA" base_Operation="_fXd5F-40EeW5DuVWeU9ZEA"/>
   <java:JavaMethod xmi:id="_KJbYgO41EeW5DuVWeU9ZEA" base_Operation="_fXd5GO40EeW5DuVWeU9ZEA"/>
   <java:JavaClass xmi:id="_LMAP0O41EeW5DuVWeU9ZEA" base_Classifier="_fXd5De40EeW5DuVWeU9ZEA"/>
   <java:JavaProperty xmi:id="_MPkloO41EeW5DuVWeU9ZEA" base_Property="_fXd5Du40EeW5DuVWeU9ZEA"/>
@@ -390,4 +399,5 @@ post:: self.member->excludes(m)</body>
   <java:JavaMethod xmi:id="_KWstkO43EeW5DuVWeU9ZEA" base_Operation="_fXqtVO40EeW5DuVWeU9ZEA"/>
   <java:JavaMethod xmi:id="_LXCJMO43EeW5DuVWeU9ZEA" base_Operation="_fXqtVe40EeW5DuVWeU9ZEA"/>
   <java:JavaProperty xmi:id="_k137IPmoEeWXrtjlOeRGKg" base_Property="_Yz6lIPmoEeWXrtjlOeRGKg"/>
+  <java:JavaProperty xmi:id="_TcOlsP1AEeWVZMhpwAJTpg" base_Property="_DfUdEP1AEeWVZMhpwAJTpg"/>
 </xmi:XMI>

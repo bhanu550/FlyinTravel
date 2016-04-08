@@ -39,8 +39,9 @@ public class Bank_System {
 	/**
 	 * 
 	 */
-	public void ValidateTransaction() { 
+	public Integer ValidateTransaction() { 
 		// TODO Auto-generated method
+		return 0;
 	 } 
 
 }
